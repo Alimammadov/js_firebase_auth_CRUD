@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="files/css/switchery.min.css">
+
+    <title>WSB Events!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+
+            Events
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a class="btn btn btn-warning my-2 my-sm-0" href="https://www.linkedin.com/in/ali-mammadov">Info</a>
+                <button class="btn btn btn-danger my-2 my-sm-0" id="logout">Log out</button></div>
+        </form>
+    </nav>
+    <section class="today-box" id="today-box">
+        <span class="breadcrumb"><span>Today: </span>
+            <h3 class="date-title" id="date">
+            </h3>
+        </span>
+
+
+        <div class="plus-icon" data-toggle="modal" data-target="#exampleModal">
+            <i class="fas fa-plus"></i>
+        </div>
+    </section>
+    <div class="container">
+
+
+        <div class="col-xs-12">
+
+            <h4 class="center">Events</h4>
+            <!-------------------------->
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+            <!--------------------->
+        </div>
+    </div>
+    <!------------------modal--------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-sx-12">
+                        <form>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Event name</label>
+                                <input type="text" id="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Event name">
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail2">Event date</label>
+                                <input type="date" id="date" class="form-control" id="exampleInputEmail1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="decsription1">Event description</label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary sendToFireBase">Add Event</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="files/scripts/switchery.min.js"></script>
+    <script src="files/scripts/main.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+
+</body>
+
+</html>
